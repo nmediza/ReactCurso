@@ -1,0 +1,23 @@
+
+.cart-widget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #EEBF25;
+    width: 60px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.cart-widget img{
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+}
+
+.cart-widget span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-left: 3px;
+}
+

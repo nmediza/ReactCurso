@@ -1,0 +1,61 @@
+.welcome {
+    height: calc(100vh - 55px);
+    width: 100%;
+    background-image: url('./welcome-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.welcome-text-container {
+    margin: 100px;
+}
+
+.welcome-text-container h2 {
+    color: #f0c029;
+    font-size: 13rem;
+    font-weight: bolder;
+}
+
+.welcome-text-container h3 {
+    color: #B4B3B3;
+    font-size: 6.5rem;
+    text-align: center;
+}
+
+/* animacion */
+
+.welcome-text-container {
+    opacity: 0;
+    animation: slideIn 1s ease-in-out 0s forwards;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .welcome-text-container h3,
+  .welcome-text-container h2 {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0s forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
